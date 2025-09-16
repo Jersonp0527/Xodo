@@ -5,25 +5,18 @@ import cors from 'cors'; // Middleware para habilitar CORS
 import morgan from 'morgan'; // Middleware para logs de peticiones
 
 
-
-// Inicialización de la aplicación Express
-const app = express();
-// Habilita CORS para todas las rutas
-app.use(cors());
-// Muestra logs de las peticiones en consola
-app.use(morgan('dev'));
-// Permite recibir y parsear JSON en las peticiones
-app.use(express.json());
+// 1) Middlewares: cosas que se ejecutan ANTES de tus rutas
+app.use(cors());              // Permite peticiones desde otros orígenes (ej. frontend en otro puerto)
+app.use(morgan('dev'));       // Log de las peticiones en consola (GET /api/todos 200 ...)
+app.use(express.json());      // Parsea JSON en el body: req.body ya será un objeto
 
 
-
-// Almacenamiento temporal de los todos en memoria
-let todos = [];
-
+// 2) Almacenamiento EN MEMORIA (se pierde al reiniciar)
+let todos = []; // Cada todo será { id, text, done, createdAt }
 
 // Salud
 app.get('/api/health', (_req, res) => {
-  res.json({ ok: true, service: 'todo-api', timestamp: Date.now() });
+  res.json({ ok: true, service: 'xodo-api', timestamp: Date.now() });
 });
 
 
