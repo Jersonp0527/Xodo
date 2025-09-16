@@ -7,9 +7,7 @@ function App() {
   return (
     <>
       <div className="title-container">
-        <h1>Xodo
-
-        </h1>
+        <h1>Xodo</h1>
 
       </div>
       <div className="card">
@@ -20,6 +18,9 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
     </>
   )
 }
