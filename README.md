@@ -14,8 +14,23 @@ Sin rutas en el frontend: todo en una página con componentes bien organizados.
 
 ## 🧩 Tecnologías
 
-- Node.js ≥ 18
-- React 18 con Vite
-- Bootstrap 5 (CDN en index.html del frontend)
-- Express 4
-- (Opcional) Zod/Yup para validación, Axios/Fetch para HTTP, Vitest/RTL para pruebas
+- Frontend: React (Vite recomendado) + Context API + Hooks (useState, useReducer, useEffect).
+- UI: Bootstrap 5 mediante CDN (sin React‑Bootstrap).
+- Backend: ExpressJS con rutas REST /api/todos (GET/POST/PUT/DELETE). Persistencia inicial en memoria.
+- Comunicación: Fetch/axios hacia http://localhost:3000/api/todos (o puerto que definas).
+
+**Nota sobre el HTML para el CDN de Bootstrap:**
+- Vite: agrega los enlaces del CDN en el index.html de la raíz del proyecto (Vite no usa public/index.html).
+- CRA (Create React App): sería en public/index.html.
+
+✅ Lista de progreso y pendientes (To‑Do list)
+
+[ ] Preparación del entorno
+[ ] Backend Express (MVP en memoria)
+[ ] Frontend React — Estructura básica
+[ ] Context API (estado global)
+[ ] Conexión con la API
+[ ] UX y validaciones
+[ ] Persistencia mejorada (opcional)
+[ ] Calidad y mantenimiento
+[ ] Extras (stretch goals)
