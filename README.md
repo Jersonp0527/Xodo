@@ -25,12 +25,12 @@ Sin rutas en el frontend: todo en una página con componentes bien organizados.
 
 ✅ Lista de progreso y pendientes (To‑Do list)
 
-[ ] Preparación del entorno
-[ ] Backend Express (MVP en memoria)
-[ ] Frontend React — Estructura básica
-[ ] Context API (estado global)
-[ ] Conexión con la API
-[ ] UX y validaciones
-[ ] Persistencia mejorada (opcional)
-[ ] Calidad y mantenimiento
-[ ] Extras (stretch goals)
+1. Preparación del entorno2
+2. Backend Express (MVP en memoria)
+3. Frontend React — Estructura básica
+4. Context API (estado global)
+5. Conexión con la API
+6. UX y validaciones
+7. Persistencia mejorada (opcional)
+8. Calidad y mantenimiento
+9. Extras (stretch goals)1
