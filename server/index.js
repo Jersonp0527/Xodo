@@ -21,6 +21,11 @@ app.use(express.json());
 let todos = [];
 
 
+// Salud
+app.get('/api/health', (_req, res) => {
+  res.json({ ok: true, service: 'todo-api', timestamp: Date.now() });
+});
+
 
 // Obtener todos los todos
 app.get('/api/todos', (req, res) => {
