@@ -7,7 +7,7 @@ export default function App()  {
       className="d-flex justify-content-center align-items-center"
       style={{ minHeight: "100vh" }}
       >
-        <Title />
+        <Title></Title>
         <TodoForm />
     </div>
   );
