@@ -23,6 +23,46 @@ Sin rutas en el frontend: todo en una página con componentes bien organizados.
 - Vite: agrega los enlaces del CDN en el index.html de la raíz del proyecto (Vite no usa public/index.html).
 - CRA (Create React App): sería en public/index.html.
 
+
+## 🛠️ Clonar y preparar el entorno
+
+Puedes clonar y preparar el entorno automáticamente en Windows usando el script `setup.bat`:
+
+```sh
+REM https://github.com/Jersonp0527/Xodo
+setup.bat https://github.com/Jersonp0527/Xodo
+```
+
+Esto hará:
+- Clonar el repositorio en una carpeta llamada `Xodo`
+- Instalar dependencias en `server` y `client`
+- Mostrar instrucciones para iniciar ambos servidores
+
+### Manualmente (alternativa)
+1. Clona el repo y entra a la carpeta:
+	```sh
+	git clone https://github.com/Jersonp0527/Xodo
+	cd Xodo
+	```
+2. Instala dependencias backend:
+	```sh
+	cd server && npm install && cd ..
+	```
+3. Instala dependencias frontend:
+	```sh
+	cd client && npm install && cd ..
+	```
+4. Inicia backend:
+	```sh
+	cd server && npm start
+	```
+5. Inicia frontend:
+	```sh
+	cd client && npm run dev
+	```
+
+---
+
 ✅ Lista de progreso y pendientes (To‑Do list)
 
 1. Preparación del entorno2
