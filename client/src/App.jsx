@@ -1,28 +1,17 @@
-import { useState } from 'react'
-import './App.css'
+import TodoCard from "./components/TodoCard";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App()  {
   return (
-    <>
-      <div className="title-container">
-        <h1>Xodo</h1>
-
-      </div>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div
+      className="d-flex justify-content-center align-items-center"
+      style={{ minHeight: "100vh" }}
+    >
+    <TodoCard>
+      <p className="text-muted mb-2">① Aquí irá el formulario.</p>
+      <p className="text-muted mb-0">② Aquí irá la lista de tareas.</p>
+    </TodoCard>
+    
+    </div>
+  );
 }
 
-export default App
