@@ -1,4 +1,3 @@
-import "../styles/TodoForm.css";
 // import { useState, useRef } from "react";
 
 // Componente de formulario para crear tareas
@@ -24,11 +23,11 @@ export default function TodoForm() {
     // Contenedor centrado usando utilidades de Bootstrap
     <div className="d-flex justify-content-center align-items-center">
       {/* Tarjeta visual con padding y sombra ligera */}
-      <div className="card border-0 m-1 p-3 shadow-sm todo-card">
+      <div className="card border-0 m-1 p-3 todo-card">
         {/* Botón que despliega/colapsa el formulario usando el componente Collapse de Bootstrap */}
         <button
           type="button"
-          className="btn  w-100 mb-2"             // w-100 = ancho completo; mb-2 = margen inferior
+          className="btn btn-primary w-100 mb-2"             // w-100 = ancho completo; mb-2 = margen inferior
           data-bs-toggle="collapse"               // activa el comportamiento de colapso
           data-bs-target="#todoFormCollapse"      // id del elemento que se va a colapsar
           aria-expanded="false"                   // accesibilidad: estado inicial del colapso
